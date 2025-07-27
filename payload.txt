@@ -7,7 +7,6 @@ ENTER
 CMD a
 
 REM Open Terminal
-GUI SPACE
 STRING Terminal
 DELAY 200
 ENTER
