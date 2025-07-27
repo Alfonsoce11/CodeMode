@@ -1,11 +1,23 @@
 DEFAULT_DELAY 100
 
+REM Turn on do not disturb
+GUI SPACE
+STRING Do Not Disturb
+ENTER
+GUI SPACE
+
 REM Open Terminal
 GUI SPACE
 STRING Terminal
 DELAY 200
 ENTER
 DELAY 200
+
+REM create and open the projects folder
+STRING mkdir -p Projects
+ENTER
+STRING cd Projects
+ENTER
 
 REM Run a python script to ask what type of project you're making and make starter files for it.
 STRING curl -O https://raw.githubusercontent.com/Alfonsoce11/CodeMode/refs/heads/main/createProjectFiles
