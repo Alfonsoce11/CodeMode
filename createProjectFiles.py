@@ -5,10 +5,11 @@ def createProjectFiles():
     os.mkdir(projectTitle)
     os.chdir(projectTitle)
     os.system("git init")
-    name = input("What is your full name: ")
+    name = input("What is your full name for the license (exit to not add a license): ")
     year = datetime.now().year
-    with open("LICENSE", "w") as file:
-        file.write(f"""MIT License
+    if name.lower() != "exit":
+        with open("LICENSE", "w") as file:
+            file.write(f"""MIT License
 
 Copyright (c) {year} {name}
 
