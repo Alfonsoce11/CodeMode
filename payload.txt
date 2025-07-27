@@ -1,9 +1,10 @@
-DEFAULT_DELAY 100
+DEFAULT_DELAY 20
 
 REM Turn on do not disturb
 GUI SPACE
 STRING Do Not Disturb
 ENTER
+DELAY 100
 GUI a
 
 REM Open Terminal

@@ -70,7 +70,7 @@ if __name__ == "__main__":
             open("project-file", "w").close()
             break
         elif projectType == "exit":
-            return
+            break
         else:
             print("Invalid input.")
     os.system("git add .")
