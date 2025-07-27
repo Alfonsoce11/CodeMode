@@ -1,17 +1,15 @@
 DEFAULT_DELAY 100
 
-REM turn on do not disturb
-F6
-
 REM Open Terminal
 GUI SPACE
 STRING Terminal
-ENTER
-DELAY 500
-
-REM Run a python script to ask what type of project you're making and make starter files for it.
-STRING curl -O https://raw.githubusercontent.com/Alfonsoce11/CodeMode/refs/heads/main/createProjectFiles.py
+DELAY 200
 ENTER
 DELAY 200
-STRING python createProjectFiles.py
+
+REM Run a python script to ask what type of project you're making and make starter files for it.
+STRING curl -O https://raw.githubusercontent.com/Alfonsoce11/CodeMode/refs/heads/main/createProjectFiles
+ENTER
+DELAY 200
+STRING ./createProjectFiles
 ENTER

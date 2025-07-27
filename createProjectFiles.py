@@ -4,6 +4,7 @@ def createProjectFiles():
     projectTitle = input("What is the title of your project: ")
     os.mkdir(projectTitle)
     os.chdir(projectTitle)
+    os.system("git init")
     name = input("What is your full name: ")
     year = datetime.now().year
     with open("LICENSE", "w") as file:
